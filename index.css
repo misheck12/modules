@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1440px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* navbar */
+.header{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 4px #e4e4e4;
+}
+
+.header .logo-text{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.header .links-box{
+    display: flex;
+    margin-right: 50px;
+}
+
+.header .links-box .links{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.header .links-box .links.active{
+    color: #3699ff;
+}
+
+/* date-and-time */
+.date-time-section{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.date-time-section .date-and-time{
+    font-weight: 600;
+    margin-right: 50px;
+}
+
+/* booklist container */
+.booklist-container{
+    margin: 30px auto;
+    width: 1200px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 768px){
+    .booklist-container{
+        width: 95%;
+    }
+}
+
+.booklist-container .main-heading{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.booklist-container .table{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+}
+
+.table:nth-child(even) {
+    background-color: #e4e4e4;
+}
+  
+.table:nth-child(odd) {
+    background-color: #fff;
+}
+
+.bt1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.remove-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* add book form */
+.addbooks-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 30px auto;
+}
+
+@media(max-width: 768px){
+    .addbooks-form{
+        width: 95%;
+    }
+}
+
+.addbooks-form .form-heading{
+    margin: 30px 0;
+}
+
+.addbooks-form input{
+    width: 100%;
+    height: 45px;
+    text-indent: 3px;
+    outline: none;
+    padding: 5px;
+}
+
+.btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-div .submit-btn{
+    width: 100px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    margin-right: -5px;
+}
+
+/* contact section */
+.contact-section{
+    width: 800px;
+    margin: 30px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .contact-section{
+        width: 95%;
+    }
+}
+
+.contact-section .contact-heading{
+    margin: 30px 0;
+    font-size: 24px;
+}
+
+.contact-section .contact-text{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.contact-section .contact-ul{
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.contact-section .contact-ul .contact-li{
+    margin: 10px 0;
+}
+
+/* end of contact section */
+
+/* footer */
+.footer{
+    padding: 30px;
+    background-color: #e4e4e4;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
