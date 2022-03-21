@@ -1,56 +1,31 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Aweosome-Books
+A simple book list application developed using JavaScript Objects and Local Storage
 
-# Project Name
-
-> Description the project.
-
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+# Built With
+- Html5
+- JavaScript
+- webpack
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-
-### Setup
+This project is dependent on some dev packages like Google Fonts. You need to install these packages in your local project environment to get the most of this project.
 
 ### Install
+Run 'npm install' in your code terminal to install the packages.
 
 ### Usage
+Install live server extension for your code editor to view the project or directly use the index.html file to open the project.
 
-### Run tests
+# Authors
 
-### Deployment
+**Misheck Livingi**
 
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@misheck12](https://github.com/misheck12)
+- Twitter: [@MisheckLivingi2](https://twitter.com/MisheckLivingi2)
+- LinkedIn: [Mishecklivingi](https://www.linkedin.com/in/misheck-livingi-a0b536142/)
 
 ## 🤝 Contributing
 
@@ -61,13 +36,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
