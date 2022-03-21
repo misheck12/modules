@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="body">
+    <!-- main wrapper or container -->
+    <main class="wrapper">
+
+        <!-- navigation bar -->
+        <header class="header">
+            <h6 class="logo-text">Awesome Books</h6>
+            <nav class="links-box">
+                <span class="links active" id="list">List</span>
+                <span class="links" id="form">Add New</span>
+                <span class="links" id="contact">Contact</span>
+            </nav>
+        </header>
+        <!-- end of navigation bar -->
+
+        <!-- date time section -->
+        <section class="date-time-section">
+            <p class="date-and-time" id="date-and-time"></p>
+        </section>
+        <!-- end of date time section -->
+
+        <!-- booklist -->
+        <section class="booklist-container" id="booklist-container">
+            <h1 class="main-heading">All Awesome Books</h1>
+        </section>
+        <!-- end of booklist -->
+
+        <!-- form to add a book -->
+        <form class="addbooks-form" id="addBooks-form" autocomplete="off">
+            <h3 class="form-heading">Add a new book</h3>
+            <input type="text" id="title" placeholder="Add Book Title" required/>
+            <br>
+            <input type="text" id="author" placeholder="Add Book Author" required/>
+            <br>
+            <div class="btn-div">
+                <button class="submit-btn" type="submit">Add</button>
+            </div>
+        </form>
+        <!-- end of form to add a book -->
+
+        <!-- contact section -->
+        <section class="contact-section" id="contact-section">
+            <h3 class="contact-heading">Contact Information</h3>
+            <p class="contact-text">Do you have any questions or you just want to say "Hello"? You can reach out to us.</p>
+            <ul class="contact-ul">
+                <li class="contact-li">Our e-mail: <a href="#">mail@mail.com</a></li>
+                <li class="contact-li">Our phone number: 090078201</li>
+                <li class="contact-li">Our address: Street name 22 84506, Karachi, Pakistan</li>
+            </ul>
+        </section>
+        <!-- end of contact section -->
+
+        <!-- copyright -->
+        <footer class="footer">Copyright</footer>
+        <!-- end of copyright -->
+
+    </main>
+    <!-- end of main wrapper or container -->
+
+    <!-- linking javascript -->
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
