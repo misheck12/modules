@@ -5,7 +5,7 @@
 
 import Book from './modules/books.js';
 import UI from './modules/ui.js';
-import { DateTime } from './modules/luxon.js';
+import { DateTime } from './node_modules/luxon.js';
 
 const time = DateTime.now().toFormat('LLL dd yyyy, hh:mm:ss a');
 const time2 = document.querySelector('.date-and-time');
