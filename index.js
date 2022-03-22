@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
@@ -9,6 +10,7 @@ import { DateTime } from './modules/luxon.js';
 const time = DateTime.now().toFormat('LLL dd yyyy, hh:mm:ss a');
 const time2 = document.querySelector('.date-and-time');
 time2.textContent = time;
+
 export class Store {
   // getting books from LS
   static getBooks() {

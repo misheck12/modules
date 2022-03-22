@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 // UI Class: handles UI tasks
 export default class UI {
   // getting books
