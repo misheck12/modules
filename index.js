@@ -1,8 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-use-before-define */
-
 import Book from './modules/books.js';
 import Store from './modules/store.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
