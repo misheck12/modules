@@ -19,7 +19,7 @@ Run 'npm install' in your code terminal to install the packages.
 ### Usage
 Install live server extension for your code editor to view the project or directly use the index.html file to open the project.
 
-# Authors
+# Author
 
 **Misheck Livingi**
 
