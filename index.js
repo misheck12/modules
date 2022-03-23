@@ -4,45 +4,46 @@
 /* eslint-disable no-use-before-define */
 
 import Book from './modules/books.js';
-import UI from './modules/ui.js';
+import Store from './modules/store.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const time = DateTime.now().toFormat('LLL dd yyyy, hh:mm:ss a');
 const time2 = document.querySelector('.date-and-time');
 time2.textContent = time;
 
-export class Store {
-  // getting books from LS
-  static getBooks() {
-    let books;
-    if (localStorage.getItem('Books') !== null) {
-      books = JSON.parse(localStorage.getItem('Books'));
-    } else {
-      books = [];
-    }
-    return books;
-  }
+const storedBooks = Store.getBooks();
 
-  // adding books to local storage
-  static addBook(book) {
-    storedBooks.push(book);
-    localStorage.setItem('Books', JSON.stringify(storedBooks));
-  }
-
-  // removing books from local storage
-  static removeBook(ID) {
-    const idInNum = Number(ID);
+export default class UI {
+  // getting books
+  static displayBooks() {
     storedBooks.forEach((storedBook, index) => {
-      if (storedBook.ID === idInNum) {
-        storedBooks.splice(index, 1);
-      }
+      UI.addBookToList(storedBook, index);
     });
-    localStorage.setItem('Books', JSON.stringify(storedBooks));
+  }
+
+  // adding book to list
+  static addBookToList(storedBook) {
+    document.getElementById('booklist-container').innerHTML += `
+      <div class="table">
+          <h4 class="bt1">${storedBook.Title} by ${storedBook.Author}</h4>
+          <button id="${storedBook.ID}" class="remove-btn">Remove</button>
+      </div>
+      `;
+  }
+
+  // clear form fields
+  static clearForm() {
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
+  }
+
+  // delete books from UI
+  static deleteBook(el) {
+    if (el.classList.contains('remove-btn')) {
+      el.parentElement.remove();
+    }
   }
 }
-
-// global variable
-const storedBooks = Store.getBooks();
 
 // Event Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
