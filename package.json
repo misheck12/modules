@@ -1,0 +1,37 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "restructure of awesome-books using modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamzaAnwar1998/Awesome-Books-Using-Modules.git"
+  },
+  "keywords": [
+    "modules"
+  ],
+  "author": "Hamza Anwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamzaAnwar1998/Awesome-Books-Using-Modules/issues"
+  },
+  "homepage": "https://github.com/HamzaAnwar1998/Awesome-Books-Using-Modules#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.10",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "luxon": "^2.3.1"
+  }
+}
